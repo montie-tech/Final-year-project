@@ -17,7 +17,7 @@ a {
     text-decoration: none;
     color: black;
     border: none;
-    background-color: rgb(125, 138, 125);
+    background-color: rgb(219, 88, 12);
 }
 
 a:hover {
@@ -28,4 +28,8 @@ p {
     text-align: center;
     text-color: blue;
     font-size: larger;
+}
+
+.sidenav {
+    right: 0;
 }
