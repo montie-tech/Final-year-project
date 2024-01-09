@@ -1,7 +1,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: url("contactbackground.jpg");
+    background: url("contactus.jpg");
     background-size: cover;
     text-align: center;
     border: none;
@@ -23,3 +23,15 @@ h2 {
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+    border: none;
+    background-color: goldenrod;
+}
+
+a:hover {
+    color: green;
+}
+
