@@ -1,0 +1,62 @@
+    body {
+    width: 100vw;
+    height: 100vh;
+    background: url("landing.jpg");
+    background-size: cover;
+    text-align: center;
+    border: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+    font-style: var();
+    font-size: xx-large;
+}
+
+h2 {
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+}
+
+h3 {
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    border: none;
+    background-color: green;
+}
+
+a:hover {
+    color: #090080;
+}
+
+.glow {
+    font-size: 70px;
+    color: #ffffff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
+    }
+    to {
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }

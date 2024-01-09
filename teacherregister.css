@@ -1,0 +1,40 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url("register.jpg");
+    background-size: fill;
+    text-align: center;
+    border: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+    font-style: var();
+    font-size: xx-large;
+}
+
+h2 {
+    text-align: center;
+    font-size: large;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    border: none;
+    background-color: purple;
+}
+
+a:hover {
+    color: green;
+}
+
+input {
+    background-color: chocolate;
+}
