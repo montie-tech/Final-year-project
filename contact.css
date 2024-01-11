@@ -15,6 +15,11 @@ h1 {
     font-weight: normal;
     font-style: var();
     font-size: xx-large;
+    color: blue;
+}
+
+h1:hover {
+    color: white;
 }
 
 h2 {
@@ -22,16 +27,34 @@ h2 {
     font-size: large;
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
+    color: green;
+}
+
+h2:hover {
+    color: red;
+}
+
+h3 {
+    text-align: center;
+    font-size: large;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    color: yellow;
+}
+
+h3:hover {
+    color: blue;
 }
 
 a {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    background: white;
     text-decoration: none;
-    color: black;
-    border: none;
-    background-color: goldenrod;
+    color: blue;
 }
 
 a:hover {
     color: green;
 }
-
