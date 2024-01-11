@@ -25,6 +25,10 @@ h2 {
     color: blue;
 }
 
+h2:hover {
+    color: red;
+}
+
 h3 {
     text-align: center;
     font-size: large;
@@ -33,15 +37,29 @@ h3 {
     color: brown;
 }
 
+h3:hover {
+    color: white;
+}
+
+div {
+    font-size: larger;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    justify-content: flex-start;
+}
+
 a {
     text-decoration: none;
-    color: black;
-    border: none;
-    background-color: green;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    background: white;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #090080;
+    color: yellow;
 }
 
 .glow {
@@ -58,5 +76,5 @@ a:hover {
         text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;
     }
     to {
-        text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        text-shadow: 0 0 20px #eeeeee, 0 0 30px #e14dff, 0 0 40px #a94dff, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
     }
