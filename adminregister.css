@@ -1,40 +1,64 @@
-body {
-    width: 100vw;
-    height: 100vh;
-    background: url("register.jpg");
-    background-size: fill;
-    text-align: center;
-    border: none;
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-
-h1 {
-    text-align: center;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: normal;
-    font-style: var();
-    font-size: xx-large;
-}
-
-h2 {
-    text-align: center;
-    font-size: large;
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    border: none;
-    background-color: blue;
-}
-
-a:hover {
-    color: green;
-}
-
-input {
-    background-color: skyblue;
-}
+    body {
+        width: 100vw;
+        height: 100vh;
+        background: url("register.jpg");
+        background-size: fill;
+        text-align: center;
+        border: none;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    
+    h1 {
+        text-align: center;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: normal;
+        font-style: var();
+        font-size: xx-large;
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: large;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+        border: none;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 14px;
+        border: 1px solid whitesmoke;
+        background: skyblue;
+    }
+    
+    a:hover {
+        color: green;
+    }
+    
+    form {
+        text-align: center;
+    }
+    
+    input {
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 14px;
+        border: 1px solid whitesmoke;
+        width: 20%
+    }
+    
+    input:hover {
+        color: red;
+    }
+    
+    label {}
+    
+    p {
+        font-size: 14px;
+        margin: 15px 0;
+        color: blue;
+    }
