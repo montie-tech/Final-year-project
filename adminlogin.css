@@ -25,10 +25,12 @@ h2 {
 }
 
 a {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    background: white;
     text-decoration: none;
-    color: black;
-    border: none;
-    background-color: blue;
+    color: brown;
 }
 
 a:hover {
@@ -36,5 +38,13 @@ a:hover {
 }
 
 input {
-    background-color: skyblue;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid whitesmoke;
+    background: skyblue;
+}
+
+input:hover {
+    color: red;
 }
