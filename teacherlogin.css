@@ -25,16 +25,27 @@ h2 {
 }
 
 a {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    background: peru;
     text-decoration: none;
     color: black;
-    border: none;
-    background-color: purple;
 }
 
 a:hover {
-    color: green;
+    color: purple;
 }
 
 input {
-    background-color: chocolate;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    background: white;
+    text-decoration: none;
+    color: brown;
+}
+
+input:hover {
+    color: red;
 }
