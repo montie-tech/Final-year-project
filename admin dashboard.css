@@ -1,155 +1,186 @@
-body {
-    width: 100%;
-    background: white;
-    position: relative;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    display: flex;
-}
-
-#menu {
-    background: darkblue;
-    width: 300px;
-    height: 100%;
-}
-
-#menu .items li:hover {
-    background: goldenrod;
-}
-
-#menu .items li i {
-    color: white;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    font-size: 16px;
-    margin: 0 10px 0 25px;
-}
-
-#menu .items li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 300px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#menu .logo {
-    display: flex;
-    align-items: center;
-    color: darkgreen;
-    padding: 30px 0px 0px 30px;
-}
-
-#menu .logo img {
-    width: 60px;
-}
-
-h1 {
-    color: yellowgreen;
-    font-size: larger;
-}
-
-#interface {
-    width: calc(100% - 300px)
-}
-
-#interface .navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 30px;
-    background: white;
-    border-bottom: 2px solid green;
-}
-
-#interface .navigation .search {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px 14px;
-    border: 1px solid whitesmoke
-}
-
-#interface .navigation .search i {
-    margin-right: 14px;
-}
-
-#interface .navigation .search input {
-    border: none;
-    outline: none;
-    font-size: 14px;
-}
-
-#interface .navigation .profile {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 40px;
-}
-
-#interface .navigation .profile i {
-    margin-right: 20px;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-#interface .navigation .profile img {
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-h2 {
-    font-size: 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: blue;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: green;
-}
-
-table {
-    border-collapse: collapse;
-    border-bottom: 1px solid whitesmoke;
-    border-top: 1px solid whitesmoke;
-    border-right: 1px solid whitesmoke;
-    border-left: 1px solid whitesmoke;
-    width: 1310px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-tr {
-    border-bottom: 1px solid whitesmoke;
-}
-
-thead td {
-    font-size: 17px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: blueviolet;
-    text-transform: uppercase;
-    font-weight: 400;
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
-    background: whitesmoke;
-}
-
-.Edit a {
-    text-decoration: none;
-    font-size: 16px;
-    color: blue;
-    font-weight: 500;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-@media (max-width 760px) {
     body {
-        font-size: 30px;
+        width: 100%;
+        background: white;
+        position: relative;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        display: flex;
     }
-}
+    
+    #menu {
+        background: darkblue;
+        width: 300px;
+        height: 100%;
+    }
+    
+    #menu .items li:hover {
+        background: goldenrod;
+        color: red;
+    }
+    
+    #menu .items li i {
+        color: white;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 10px;
+        margin: 0 10px 0 25px;
+    }
+    
+    #menu .items li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 300px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    #menu .items li a:hover {
+        color: red;
+    }
+    
+    #menu .logo {
+        display: flex;
+        align-items: center;
+        color: darkgreen;
+        padding: 30px 0px 0px 30px;
+    }
+    
+    #menu .logo img {
+        width: 60px;
+    }
+    
+    h1 {
+        color: yellowgreen;
+        font-size: larger;
+    }
+    
+    h1:hover {
+        color: aliceblue;
+    }
+    
+    #interface {
+        width: calc(100% - 300px)
+    }
+    
+    #interface .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 30px;
+        background: white;
+        border-bottom: 2px solid green;
+    }
+    
+    #interface .navigation .search {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 14px;
+        border: 1px solid whitesmoke
+    }
+    
+    #interface .navigation .search i {
+        margin-right: 14px;
+    }
+    
+    #interface .navigation .search input {
+        border: none;
+        outline: none;
+        font-size: 14px;
+    }
+    
+    #interface .navigation .profile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 40px;
+    }
+    
+    #interface .navigation .profile i {
+        margin-right: 20px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    #interface .navigation .profile img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    
+    h2 {
+        font-size: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: blue;
+        text-transform: uppercase;
+    }
+    
+    h2:hover {
+        color: red
+    }
+    
+    h3 {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: green;
+    }
+    
+    h3:hover {
+        color: blue;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-bottom: 1px solid whitesmoke;
+        border-top: 1px solid whitesmoke;
+        border-right: 1px solid whitesmoke;
+        border-left: 1px solid whitesmoke;
+        width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    tr {
+        border-bottom: 1px solid whitesmoke;
+    }
+    
+    thead td {
+        font-size: 17px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: blueviolet;
+        text-transform: uppercase;
+        font-weight: 400;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
+        background: whitesmoke;
+    }
+    
+    thead td:hover {
+        color: yellow;
+    }
+    
+    thead.Edit a {
+        text-decoration: none;
+        font-size: 16px;
+        color: blue;
+        font-weight: 500;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    tbody tr td.Edit a {
+        color: green;
+        text-decoration: none;
+        font-style: normal;
+    }
+    
+    tbody tr td.Edit a:hover {
+        color: red;
+    }
+    
+    @media (max-width 760px) {
+        body {
+            font-size: 30px;
+        }
+    }
