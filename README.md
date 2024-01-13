@@ -22,3 +22,11 @@ I'm currently in the learning phase, exploring programming languages such as HTM
 ## Collaboration
 
 I'm open to collaboration on this project! If you're interested in contributing or have ideas to enhance the school system, feel free to reach out.
+
+
+## How to Reach Me
+
+- **GitHub:** [montie-tech](https://github.com/montie-tech)
+- **Contact:** Inbox me on GitHub or reach out on WhatsApp at +254722384628.
+
+Your feedback and contributions are highly appreciated! Let's build an amazing school system together 🚀.
