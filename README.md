@@ -14,3 +14,11 @@ This project aims to create a comprehensive school system using web technologies
 - **HTML & CSS:** The project utilizes HTML and CSS to structure and style the web pages, providing an aesthetically pleasing and responsive design.
 
 - **JavaScript:** JavaScript is employed to enhance the user experience by adding dynamic functionalities to the school system.
+
+## Learning Journey
+
+I'm currently in the learning phase, exploring programming languages such as HTML, CSS, Python, and JavaScript. This project serves as a practical playground for applying and solidifying my coding skills.
+
+## Collaboration
+
+I'm open to collaboration on this project! If you're interested in contributing or have ideas to enhance the school system, feel free to reach out.
