@@ -18,3 +18,7 @@ This project aims to create a comprehensive school system using web technologies
 ## Learning Journey
 
 I'm currently in the learning phase, exploring programming languages such as HTML, CSS, Python, and JavaScript. This project serves as a practical playground for applying and solidifying my coding skills.
+
+## Collaboration
+
+I'm open to collaboration on this project! If you're interested in contributing or have ideas to enhance the school system, feel free to reach out.
