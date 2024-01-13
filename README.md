@@ -1,5 +1,10 @@
- Hi, I’m @montie-tech
-👀 I’m interested in creating a school system
-🌱 I’m currently learning programming languages like html,css,python and javascript
-💞️ I’m looking to collaborate on creating a school system
-📫 How to reach me inbox me or contact me on whatsapp +254722384628
+
+---
+
+# Matumaini School System
+
+Hi, I'm [montie-tech](https://github.com/montie-tech) 👋
+
+## Project Overview
+
+This project aims to create a comprehensive school system using web technologies. It includes the development of web pages using HTML, CSS, Python, and JavaScript to build an interactive and user-friendly interface for managing school-related tasks.
