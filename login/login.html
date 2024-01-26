@@ -1,42 +1,24 @@
 <!doctype html>
-
-<html>
-<link rel="icon" type="image/x-icon" href="page.jpg">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-
     <title>Matumaini Login</title>
-
-    <!-- Load external CSS styles -->
-    <link rel="stylesheet" href="login.css" href="index.html" href="admin login.html">
-
+    <link rel="icon" type="image/x-icon" href="page.jpg">
+    <link rel="stylesheet" href="login.css">
 </head>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class=" navbar ">
-    <a class="active " href="index.html "><i class="fa fa-fw fa-home "></i> Home</a><br><br>
-    <br><br><br><br>
-    <a href="admin login.html "><i class="fa fa-fw fa-envelope "></i> Admin Login</a><br><br>
-    <br><br><br><br>
-    <a href="teacher login.html"><i class="fa fa-fw fa-user "></i> Teacher Login</a><br><br>
-    <br><br><br><br>
-    <a href="student login.html"><i class="fa fa-fw fa-user "></i>Student Login</a><br><br>
 
-</div>
-
-
-
-
-
-
+<body>
+    <div class="container">
+        <h1>Welcome to Matumaini</h1>
+        <div class="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+            <p>Don't have an account? <a href="register.html">Sign up</a></p>
+        </div>
+    </div>
+    <script src="login.js"></script>
 </body>
 
 </html>
