@@ -12,14 +12,14 @@
     <div class="container">
         <h1>Create an Account</h1>
         <div class="register-form">
-            <div id="toast"></div>
             <input type="text" id="username" placeholder="Username" required>
             <input type="email" id="email" placeholder="Email" required>
             <input type="password" id="password" placeholder="Password" required>
-            <button onclick="register()">Register</button>
+            <button id="registerBtn">Register</button>
             <p>Already have an account? <a href="login.html">Login</a></p>
         </div>
     </div>
+    <div id="toast"></div> <!-- Toast notification container -->
     <script src="register.js"></script>
 </body>
 

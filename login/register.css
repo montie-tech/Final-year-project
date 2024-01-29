@@ -1,38 +1,58 @@
-body {
-    width: 100vw;
-    height: 100vh;
-    background: url("register.jpg");
-    background-size: fit;
+/* Mobile-first responsive design */
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
     text-align: center;
-    overflow-y: hidden;
-    overflow-x: hidden;
 }
 
-h1 {
-    text-align: center;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: normal;
-    font-style: var();
-    font-size: xx-large;
+.register-form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
-h2 {
-    text-align: center;
-    font-size: larger;
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
+.register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-a {
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px 14px;
-    background: whitesmoke;
-    text-decoration: none;
-    color: blue;
-    font-size: larger
+.register-form button:hover {
+    background-color: #0056b3;
 }
 
-a:hover {
-    color: red;
+p {
+    margin-top: 20px;
+}
+
+#toast {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -100%);
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+#toast.success {
+    background-color: #28a745; /* Green */
+}
+
+#toast.error {
+    background-color: #dc3545; /* Red */
 }
