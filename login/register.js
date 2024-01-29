@@ -61,3 +61,35 @@ function showToast(type, message) {
         toast.classList.remove(type);
     }, 3000); // Hide toast after 3 seconds
 }
+// server.js
+const express = require('express');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const User = require('./models/User');
+
+const app = express();
+const PORT = 3000;
+
+app.use(bodyParser.json());
+
+// MongoDB connection
+mongoose.connect('mongodb+srv://elyeesdev:Mombasa@cluster0.k3wksnj.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
+// Register endpoint
+app.post('/api/register', async (req, res) => {
+    try {
+        const { username, email, password } = req.body;
+        const user = new User({ username, email, password });
+        await user.save();
+        res.status(201).json({ message: 'User registered successfully' });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
