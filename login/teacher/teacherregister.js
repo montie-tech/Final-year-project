@@ -1,46 +1,66 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('form');
-    const emailInput = document.getElementById('email');
-    const pwdInput = document.getElementById('pwd');
+    const form = document.getElementById('teacherForm');
+    const passwordInput = document.getElementById('pwd');
     const confirmPasswordInput = document.getElementById('confirmPwd');
 
     form.addEventListener('submit', function(event) {
         event.preventDefault();
-        
-        // Validate form fields
-        if (!validateEmail(emailInput.value)) {
-            showError('Invalid email address');
-            return;
-        }
-
-        if (pwdInput.value.length < 6) {
-            showError('Password must be at least 6 characters long');
-            return;
-        }
-
-        if (pwdInput.value !== confirmPasswordInput.value) {
-            showError('Passwords do not match');
-            return;
-        }
-
-        // If all validations pass, submit the form
-        // You can send a request to the server here
-        showSuccess('Registration successful');
+        validateForm();
     });
 
-    function validateEmail(email) {
-        // Check if email ends with @matumaini.school.com
-        return email.endsWith('@matumaini.school.com');
+    passwordInput.addEventListener('input', function() {
+        toggleShowPassword(this.value);
+    });
+
+    confirmPasswordInput.addEventListener('input', function() {
+        toggleShowPassword(passwordInput.value);
+    });
+
+    function validateForm() {
+        const firstname = document.getElementById('firstname').value;
+        const lastname = document.getElementById('lastname').value;
+        const email = document.getElementById('email').value;
+        const password = passwordInput.value;
+        const confirmPassword = confirmPasswordInput.value;
+
+        if (!firstname || !lastname || !email || !password || !confirmPassword) {
+            showToast('error', 'Please fill in all fields');
+            return;
+        }
+
+        if (password !== confirmPassword) {
+            showToast('error', 'Passwords do not match');
+            return;
+        }
+
+        // Additional validation logic can be added here
+
+        // If all validations pass, submit the form
+        showToast('success', 'Registration successful');
+        form.submit();
     }
 
-    function showError(message) {
-        const errorElement = document.createElement('div');
-        errorElement.classList.add('error-message');
-        errorElement.textContent = message;
-        form.appendChild(errorElement);
+    function toggleShowPassword(password) {
+        const passwordField = document.getElementById('pwd');
+        const confirmPasswordField = document.getElementById('confirmPwd');
+
+        if (password) {
+            passwordField.type = 'text';
+            confirmPasswordField.type = 'text';
+        } else {
+            passwordField.type = 'password';
+            confirmPasswordField.type = 'password';
+        }
     }
 
-    function showSuccess(message) {
-        alert(message); // Display success message (you can replace this with a toast notification)
+    function showToast(type, message) {
+        const toast = document.createElement('div');
+        toast.classList.add('toast', type);
+        toast.textContent = message;
+        document.body.appendChild(toast);
+
+        setTimeout(() => {
+            toast.remove();
+        }, 3000);
     }
 });
