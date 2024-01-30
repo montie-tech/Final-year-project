@@ -137,6 +137,17 @@ body, h1, h2, h3, p, ul, li {
     margin-bottom: 10px;
 }
 
+.features-benefits-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+.features-section,
+.benefits-section {
+    flex-basis: 45%; /* Adjust the width as needed */
+}
+
 /* Testimonial section styles */
 .testimonial-section {
     margin-top: 50px;
