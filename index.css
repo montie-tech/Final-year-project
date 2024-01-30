@@ -1,4 +1,12 @@
 /* index.css */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Josefin+Sans:ital,wght@1,200&display=swap');
+
+/* Apply font family to the content on the webpage */
+body, h1, h2, h3, p, ul, li {
+    font-family: 'Josefin Sans', sans-serif; /* Use Josefin Sans font for the content */
+}
+
 
 /* Navbar styles */
 .navbar {
@@ -26,7 +34,7 @@
 }
 
 .navbar a.active {
-    background-color: #4CAF50;
+    background-color: #53c0cd;
     color: white;
 }
 
@@ -46,9 +54,13 @@
 }
 
 /* Banner styles */
-.banner img {
-    width: 100%;
+.banner {
+    background-image: url('images/schoolland.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* Adjust the height as needed */
 }
+
 
 /* Welcome section styles */
 .welcome-section {
@@ -57,12 +69,12 @@
 }
 
 .welcome-section h1 {
-    color: #4CAF50;
+    color: #2ecc71; /* Green color */
     font-size: 50px;
 }
 
 .glow {
-    text-shadow: 0 0 10px #4CAF50, 0 0 20px #4CAF50, 0 0 40px #4CAF50;
+    text-shadow: 0 0 10px #2ecc71, 0 0 20px #3498db, 0 0 40px #599cb6; /* Shades of green and blue */
 }
 
 /* About section styles */

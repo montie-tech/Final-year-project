@@ -13,8 +13,8 @@
     <div class="navbar">
         <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
         <a href="contacts.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
-        <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
-        <a href="register.html"><i class="fa fa-fw fa-user"></i> Signup</a>
+        <a href="login/login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+        <a href="login/register.html"><i class="fa fa-fw fa-user"></i> Signup</a>
         <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
     </div>
     
@@ -70,12 +70,32 @@
         <div class="cta-section">
             <h2>Join Matumaini School Today!</h2>
             <p>Start your journey towards success and knowledge with Matumaini School. Sign up for free and explore our wide range of courses.</p>
-            <a href="register.html" class="btn">Sign Up Now</a>
+            <a href="login/register.html" class="btn">Sign Up Now</a>
         </div>
     </div>
     
     <script>
         // Add your JavaScript code here
+        document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scrolling for anchor links in the navbar
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Search functionality
+    function myFunction() {
+        // Add your search functionality here
+        const searchText = document.getElementById('mySearch').value.toLowerCase();
+        // Example: Filter content based on searchText
+    }
+});
+
     </script>
 </body>
 
