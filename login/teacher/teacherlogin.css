@@ -1,51 +1,69 @@
+/* teacherlogin.css */
+
 body {
-    width: 100vw;
-    height: 100vh;
-    background: url("schoolhome.jpg");
-    background-size: cover;
+    font-family: Arial, sans-serif;
     text-align: center;
-    border: none;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    text-align: center;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: normal;
-    font-style: var();
-    font-size: xx-large;
+    color: #333;
 }
 
 h2 {
-    text-align: center;
-    font-size: large;
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
+    color: #FFD700;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"],
+input[type="button"] {
+    width: 49%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #45a049;
 }
 
 a {
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px 14px;
-    background: peru;
+    color: #007bff;
     text-decoration: none;
-    color: black;
 }
 
 a:hover {
-    color: purple;
-}
-
-input {
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px 14px;
-    background: white;
-    text-decoration: none;
-    color: brown;
-}
-
-input:hover {
-    color: red;
+    text-decoration: underline;
 }
