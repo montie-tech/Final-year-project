@@ -1,43 +1,43 @@
-<!doctype html>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-
+    <meta charset="UTF-8">
     <title>Teacher New Account</title>
     <link rel="icon" type="image/x-icon" href="padlock.jpg">
-
-
-    <link rel=" stylesheet " href="teacherregister.css " href="index.html ">
-    <div class=" navbar ">
-        <a href="index.html ">Homepage</a>
-    </div>
-
+    <link rel="stylesheet" href="teacherregister.css">
 </head>
 
 <body>
 
-    <h1 style="color:junglegreen; font-family:verdana; text-align:center; "> Create an account as Teacher!</h1>
-    <br>
-    <br>
-    <br>
-    <br>
-    <form style="text-align:center ">
-        <label for="firstname ">Firstname</label><br>
-        <input type="text " id="firstname " name="firstname "></input><br>
-        <label for="lastname ">lastname</label><br>
-        <input type="text " id="lastname " name="lastname "></input><br>
-        <label for="Email address ">Email address</label><br>
-        <input type="email " id="email " pattern=".+@gmail.com " maxlength="20 "></input><br>
-        <label for="password "> Password</label><br>
-        <input type="password " id="pwd " name="New password "></input><br>
-        <label for="Confirm password ">Confirm password</label><br>
-        <input type="password " id="pwd " name="Confirm password "></input><br><br>
-        <a href=" ">Create Account </a>
-    </form><br>
-    <a href="index.html "> Home </a>
+    <div class="navbar">
+        <a href="/index.html">Homepage</a>
+    </div>
 
+    <div class="container">
+        <h1>Create an account as a Teacher!</h1>
+        <form id="teacherForm">
+            <label for="firstname">First Name</label><br>
+            <input type="text" id="firstname" name="firstname" required><br>
+
+            <label for="lastname">Last Name</label><br>
+            <input type="text" id="lastname" name="lastname" required><br>
+
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" name="email" pattern=".+@matumaini.school.com" maxlength="27" required><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" id="pwd" name="password" minlength="6" required><br>
+
+            <label for="confirmPwd">Confirm Password</label><br>
+            <input type="password" id="confirmPwd" name="confirmPwd" required><br>
+
+            <input type="submit" value="Create Account">
+        </form>
+        <p>Already have an account? <a href="teacher login.html">Login</a></p>
+    </div>
+    <div id="toast"></div>
+    <script src="teacherregister.js"></script>
 </body>
 
 </html>
