@@ -73,3 +73,9 @@ p {
 #toast.error {
     background-color: #dc3545; /* Red */
 }
+.navbar {
+    background-color: #fcfafa;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
