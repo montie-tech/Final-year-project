@@ -5,6 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
     loginForm.addEventListener('submit', validateForm);
 });
 
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    validateForm();
+});
+
+
 function validateForm(event) {
     event.preventDefault();
 
